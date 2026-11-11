@@ -1,0 +1,28 @@
+{
+  "_help": [
+    "Shop settings used by the basket page and by the checkout on the server.",
+    "Amounts are in pounds, e.g. 15 or 7.50.",
+    "DELIVERY IS SWITCHED OFF ('enabled': false) until you fill it in. While it is off, no delivery charge is added.",
+    "To charge delivery: set delivery.enabled to true and fee to the amount. free_over = order value (before delivery) that gets free delivery, or null.",
+    "minimum_order: set enabled to true and amount to the minimum basket value.",
+    "collection: set enabled to true to offer free collection at checkout, and fill in the address."
+  ],
+  "max_qty_per_product": 50,
+  "minimum_order": {
+    "enabled": false,
+    "amount": 0
+  },
+  "delivery": {
+    "enabled": false,
+    "label": "Delivery",
+    "fee": 0,
+    "free_over": null,
+    "estimate_days_min": null,
+    "estimate_days_max": null
+  },
+  "collection": {
+    "enabled": false,
+    "label": "Collection",
+    "address": ""
+  }
+}
